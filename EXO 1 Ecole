@@ -1,0 +1,11 @@
+\begin{table}[]
+\begin{tabular}{llll}
+Propriete    & Type        & Entite  & Contrainte \\
+Prenom\_enf  & VACHAR(255) & enfant  & x          \\
+NumeroSS     & INT         & enfant  &            \\
+Nom\_enf     & VACHAR(255) & enfant  &            \\
+Code\_ecole  & INT         & ecole   &            \\
+Nom\_commune & VACHAR(255) & commune &            \\
+Nom\_ecole   & INT         & commune & x         
+\end{tabular}
+\end{table}
