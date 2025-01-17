@@ -1,0 +1,33 @@
+\begin{table}[]
+\begin{tabular}{lllll}
+Propriete           & Type             & Entite         & Contrainte              & identifiant \\
+id\_authors         & INT              & authors        & PRIMARY KEY             & x           \\
+Firstname           & VACHAR(255)      & authors        & NOT NULL                &             \\
+Lastname            & VACHAR(255)      & authors        & NOT NULL                &             \\
+country             & VACHAR(255)      & authors        & NOT NULL                &             \\
+date\_of\_birth     & Date             & authors        & NOT NULL                &             \\
+date\_of\_death     & Date             & authors        &                         &             \\
+id                  & INT              & editors        & PRIMARY KEY             & x           \\
+name                & VACHAR(255)      & editors        & NOT NULL                &             \\
+id                  & INT              & members        & PRIMARY KEY             & x           \\
+first\_name         & VACHAR(255)      & members        & NOT NULL                &             \\
+Last\_name          & VACHAR(255)      & members        & NOT NULL                &             \\
+email               & VACHAR(255)      & members        & NOT NULL                &             \\
+date\_of\_birth     & DATE NOT NULL    & members        & NOT NULL                &             \\
+registrerez         & BOOLEAN NOT NULL & members        & NOT NULL                &             \\
+ID                  & INT              & books          & PRIMARY KEY             & x           \\
+title               & VACHAR(255)      & books          & NOT NULL                &             \\
+year                & INT              & books          & NOT NULL                &             \\
+author\_id          & INT              & books          & NOT NULL                &             \\
+isbn                & VACHAR(255)      & book\_editions & NOT NULL, PRMARY KEY,   & x           \\
+book\_id            & INT              & book\_editions & NOT NULL                &             \\
+editor\_id          & INT              & book\_editions & NOT NULL                &             \\
+publication\_date   & DATE             & book\_editions & NOT NULL, FOREIGN KEY,  &             \\
+id                  & INT              & loans          & PRIMARY KEY             & x           \\
+book\_edition\_isbn & VACHAR(255)      & loans          & NOT NULL                &             \\
+menber\_id          & INT              & loans          & NOT NULL                &             \\
+loan\_date          & DATE             & loans          & NOT NULL                &             \\
+return\_date        & DATE             & loans          & NOT NULL                &             \\
+is\_returned        & BOOLEAN          & loans          & NOT NULL DEFAULT FALSE, &            
+\end{tabular}
+\end{table}
